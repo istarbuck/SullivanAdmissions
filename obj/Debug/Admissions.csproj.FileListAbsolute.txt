@@ -1,0 +1,239 @@
+X:\WebSites\secure.sullivan.edu\Admissions\bin\ApplicationInsights.config
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\csc.exe
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CSharp.Core.targets
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\System.Collections.Immutable.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\System.Reflection.Metadata.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\vbc.exe
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\VBCSCompiler.exe
+X:\WebSites\secure.sullivan.edu\Admissions\bin\roslyn\VBCSCompiler.exe.config
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Admissions.dll.config
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Admissions.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Admissions.pdb
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Antlr3.Runtime.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\AspNet.ScriptManager.bootstrap.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\AspNet.ScriptManager.jQuery.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\EntityFramework.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\EntityFramework.SqlServer.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.Agent.Intercept.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.DependencyCollector.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.PerfCounterCollector.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.ServerTelemetryChannel.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.Web.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.WindowsServer.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.ApplicationInsights.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.FriendlyUrls.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Identity.Core.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Identity.Owin.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Host.SystemWeb.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Cookies.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Facebook.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Google.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.OAuth.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Twitter.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.ScriptManager.MSAjax.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.ScriptManager.WebForms.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Web.Infrastructure.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Newtonsoft.Json.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Owin.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\System.Web.Optimization.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\System.Web.Providers.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\WebGrease.dll
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.DependencyCollector.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.ServerTelemetryChannel.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.Web.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AI.WindowsServer.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.ApplicationInsights.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\System.Web.Optimization.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Antlr3.Runtime.pdb
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Newtonsoft.Json.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.FriendlyUrls.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\EntityFramework.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\EntityFramework.SqlServer.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Identity.Core.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Identity.Owin.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\System.Web.Providers.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Host.SystemWeb.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Facebook.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Cookies.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Google.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.Twitter.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+X:\WebSites\secure.sullivan.edu\Admissions\bin\Microsoft.Owin.Security.OAuth.xml
+X:\WebSites\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csprojResolveAssemblyReference.cache
+X:\WebSites\secure.sullivan.edu\Admissions\obj\Debug\Admissions.dll
+X:\WebSites\secure.sullivan.edu\Admissions\obj\Debug\Admissions.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\ApplicationInsights.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\csc.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\vbc.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Admissions.dll.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Admissions.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Admissions.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.Web.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Newtonsoft.Json.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Owin.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\System.Web.Optimization.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\System.Web.Providers.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\WebGrease.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.Web.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\System.Web.Optimization.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Antlr3.Runtime.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Newtonsoft.Json.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\System.Web.Providers.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\obj\Debug\Admissions.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Admissions\obj\Debug\Admissions.pdb
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\csc.exe
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.dll
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CSharp.Core.targets
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\System.Collections.Immutable.dll
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\System.Reflection.Metadata.dll
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\vbc.exe
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\VBCSCompiler.exe
+Y:\secure.sullivan.edu\Admissions\bin\roslyn\VBCSCompiler.exe.config
+Y:\secure.sullivan.edu\Admissions\bin\Admissions.dll.config
+Y:\secure.sullivan.edu\Admissions\bin\Admissions.dll
+Y:\secure.sullivan.edu\Admissions\bin\Admissions.pdb
+Y:\secure.sullivan.edu\Admissions\bin\Antlr3.Runtime.dll
+Y:\secure.sullivan.edu\Admissions\bin\DocX.dll
+Y:\secure.sullivan.edu\Admissions\bin\EntityFramework.dll
+Y:\secure.sullivan.edu\Admissions\bin\EntityFramework.SqlServer.dll
+Y:\secure.sullivan.edu\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Y:\secure.sullivan.edu\Admissions\bin\Microsoft.Web.Infrastructure.dll
+Y:\secure.sullivan.edu\Admissions\bin\Newtonsoft.Json.dll
+Y:\secure.sullivan.edu\Admissions\bin\System.Web.Optimization.dll
+Y:\secure.sullivan.edu\Admissions\bin\WebGrease.dll
+Y:\secure.sullivan.edu\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Y:\secure.sullivan.edu\Admissions\bin\System.Web.Optimization.xml
+Y:\secure.sullivan.edu\Admissions\bin\Antlr3.Runtime.pdb
+Y:\secure.sullivan.edu\Admissions\bin\Newtonsoft.Json.xml
+Y:\secure.sullivan.edu\Admissions\bin\EntityFramework.xml
+Y:\secure.sullivan.edu\Admissions\bin\EntityFramework.SqlServer.xml
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.InitialCreate.resources
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.FirstName.resources
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.PersonalInfo.resources
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.routingInfo.resources
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.Alumni.resources
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.EnrollmentType.resources
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csproj.GenerateResource.Cache
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.dll
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.pdb
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csproj.CoreCompileInputs.cache
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csproj.CopyComplete
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\csc.exe
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\System.Collections.Immutable.dll
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\System.Reflection.Metadata.dll
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\vbc.exe
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\VBCSCompiler.exe
+Z:\secure.sullivan.edu\Admissions\bin\roslyn\VBCSCompiler.exe.config
+Z:\secure.sullivan.edu\Admissions\bin\Admissions.dll.config
+Z:\secure.sullivan.edu\Admissions\bin\Admissions.dll
+Z:\secure.sullivan.edu\Admissions\bin\Admissions.pdb
+Z:\secure.sullivan.edu\Admissions\bin\Antlr3.Runtime.dll
+Z:\secure.sullivan.edu\Admissions\bin\DocX.dll
+Z:\secure.sullivan.edu\Admissions\bin\EntityFramework.dll
+Z:\secure.sullivan.edu\Admissions\bin\EntityFramework.SqlServer.dll
+Z:\secure.sullivan.edu\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\secure.sullivan.edu\Admissions\bin\Microsoft.Web.Infrastructure.dll
+Z:\secure.sullivan.edu\Admissions\bin\Newtonsoft.Json.dll
+Z:\secure.sullivan.edu\Admissions\bin\System.Web.Optimization.dll
+Z:\secure.sullivan.edu\Admissions\bin\WebGrease.dll
+Z:\secure.sullivan.edu\Admissions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\secure.sullivan.edu\Admissions\bin\System.Web.Optimization.xml
+Z:\secure.sullivan.edu\Admissions\bin\Antlr3.Runtime.pdb
+Z:\secure.sullivan.edu\Admissions\bin\Newtonsoft.Json.xml
+Z:\secure.sullivan.edu\Admissions\bin\EntityFramework.xml
+Z:\secure.sullivan.edu\Admissions\bin\EntityFramework.SqlServer.xml
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.InitialCreate.resources
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.FirstName.resources
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.PersonalInfo.resources
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.routingInfo.resources
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.Alumni.resources
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.Migrations.EnrollmentType.resources
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csproj.GenerateResource.Cache
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.dll
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.pdb
+Y:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csprojAssemblyReference.cache
+Z:\secure.sullivan.edu\Admissions\obj\Debug\Admissions.csprojResolveAssemblyReference.cache

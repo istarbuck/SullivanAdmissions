@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Program">
+  <DataContextMoniker Name="/ProgramDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3f85f1d9-2949-4978-8643-c9886e2ebaad" absoluteBounds="4.375, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ProgramDataContext/ZipList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25d5c1b9-2e84-49a8-a609-3b35478276af" absoluteBounds="4.39, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="864923bf-e3b6-4c7d-8dc9-67229da332fa" absoluteBounds="7.875, 4.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/ProgramDataContext/ProgramCompFee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3929c14-f9c3-4d27-9c8b-72fa1950650f" absoluteBounds="7.89, 4.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="181238d0-c435-4a22-97d8-f213ce301f8f" absoluteBounds="7.75, 1.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ProgramDataContext/CompFee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="989c1666-2a71-4168-ae0e-52d427acbd7b" absoluteBounds="7.7650000000000006, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9131dbb4-fcd2-4466-b27c-76c7d8d3d06e" absoluteBounds="1.25, 2.375, 2, 4.8477197265625">
+      <DataClassMoniker Name="/ProgramDataContext/Program" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7094396b-9438-4f1c-ad02-11c59bb79525" absoluteBounds="1.2650000000000001, 2.835, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

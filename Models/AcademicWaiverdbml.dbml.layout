@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AcademicWaiverdbml">
+  <DataContextMoniker Name="/AcademicWaiverdbmlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2c23cdfd-33e2-476a-a9f9-b68f71b89941" absoluteBounds="3, 2, 2, 4.2708154296875">
+      <DataClassMoniker Name="/AcademicWaiverdbmlDataContext/AcademicWaiver" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e64746c9-85b5-463d-9517-de339e63bfa4" absoluteBounds="3.015, 2.46, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

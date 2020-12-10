@@ -1,0 +1,197 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Admissions.SiteMaster"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+        <link rel="stylesheet" type="text/css" href="https://secure.sullivan.edu/template_forms/css/style-forms.css" />
+    <link rel="stylesheet" type="text/css" href="https://secure.sullivan.edu/template_forms/css/forms.css" />
+    <link href="https://Secure.sullivan.edu/forms/css/jquery-ui-1.10.1.custom.css" rel="stylesheet" />
+
+    <%--<link href='http://fonts.googleapis.com/css?family=Mate+SC' rel='stylesheet' type='text/css'>--%>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="ESignature/jquery.signaturepad.js"></script>
+    <script type="text/javascript" src="Esignature/json2.min.js"></script>
+        <script type="text/javascript" src="ESignature/jquery.signaturepad.js"></script>
+    <script type="text/javascript" src="Esignature/json2.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.json-2.4.min.js"></script>
+    
+    <script src="https://Secure.sullivan.edu/forms/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="Esignature/flashcanvas.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        #timer
+        {
+            border: 1px solid #800000;
+            background: #E8E8E8;  
+            color: #800000;
+            text-align: center;
+            width: 150px;
+            font-weight: bold;
+            font-size: large;
+            margin-left: 750px;
+            padding: 0;
+        }
+        
+        #timer p
+        {
+            margin: 0;
+        }
+        
+                form select 
+        {
+        	margin-left: 10px;
+	        margin-right: 0;
+	        margin-top: 5px;
+            height: 20px;
+        }
+        
+        .main-content
+        {
+            margin: 0 auto;
+              
+        }
+
+        .radio label {
+	display:inline;
+	float:right;
+	width: 60px; 
+	padding: 5px; 
+	margin: 0px 0px 0px 0px; /* set top margin same as form input - textarea etc. elements */
+	text-align: left; 
+	}
+
+    .formCB label
+    {
+        display: block;  /* block float the labels to left column, set a width */
+	    float: left; 
+	    width: 600px; 
+	    padding: 0; 
+	    margin: 5px 0 2px; /* set top margin same as form input - textarea etc. elements */
+	    text-align: left; 
+    }
+
+    </style>
+
+<%--    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('.Date').datepicker();
+        });
+    </script>--%>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+	
+	<!--
+
+Start of DoubleClick Floodlight Tag: Please do not remove
+
+Activity name of this tag: HTV - WLKY - Sullivan Schools - Remarketing - Supply Chain
+
+URL of the webpage where the tag is expected to be placed: http://www.sullivan.edu
+
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+
+Creation Date: 07/17/2015
+
+-->
+
+<script type="text/javascript">
+
+var axel = Math.random() + "";
+
+var a = axel * 10000000000000;
+
+document.write('<iframe src="https://4968116.fls.doubleclick.net/activityi;src=4968116;type=invmedia;cat=f5e9ltjw;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+
+</script>
+
+<noscript>
+
+<iframe src="https://4968116.fls.doubleclick.net/activityi;src=4968116;type=invmedia;cat=f5e9ltjw;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+
+</noscript>
+
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
+<!--
+
+Start of DoubleClick Floodlight Tag: Please do not remove
+
+Activity name of this tag: HTV - WLKY - Sullivan Schools - Remarketing - BSN
+
+URL of the webpage where the tag is expected to be placed: http://www.sullivan.edu
+
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+
+Creation Date: 07/17/2015
+
+-->
+
+<script type="text/javascript">
+
+var axel = Math.random() + "";
+
+var a = axel * 10000000000000;
+
+document.write('<iframe src="https://4968116.fls.doubleclick.net/activityi;src=4968116;type=invmedia;cat=kd3mqxq6;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+
+</script>
+
+<noscript>
+
+<iframe src="https://4968116.fls.doubleclick.net/activityi;src=4968116;type=invmedia;cat=kd3mqxq6;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+
+</noscript>
+
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+	
+</head>
+<body>
+    <form runat="server" id="form1" autocomplete="off" >
+
+
+<div class="wrapper">
+	<div class="header">
+          <img src="https://secure.sullivan.edu/template_forms/img/sullivan-logo-hdr.png" />
+    </div>
+    <div class="title">
+        <asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder>
+    </div>
+            
+    <div class="main-content" >
+
+<%--            <asp:ScriptManager ID="ScriptManager1" runat="server" >
+            </asp:ScriptManager>
+            <script type="text/javascript">
+
+                var manager = Sys.WebForms.PageRequestManager.getInstance();
+
+                manager.add_beginRequest(beginRequest);
+
+                function beginRequest() {
+                    manager._scrollPosition = null;
+                }
+
+            </script>--%>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+ <ul style="text-align:center"  >
+                <li style="display:inline"><a href="security.htm" target="_blank" style="text-decoration:none">Security Policy</a></li> | 
+                <li style="display:inline"><a href="refund.htm" target="_blank" style="text-decoration:none">Refund</a></li> | 
+                <li style="display:inline"><a href="http://www.sullivan.edu/privacy/" target="_blank" style="text-decoration:none">Privacy Policy</a></li>
+                </ul>
+
+    <div class="footer">
+        
+    </div>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>

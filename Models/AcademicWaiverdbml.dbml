@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WebForms" Class="AcademicWaiverdbmlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sv-ad-max-sql3;Initial Catalog=WebForms;User ID=webappuser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WebFormsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AcademicWaiver" Member="AcademicWaivers">
+    <Type Name="AcademicWaiver">
+      <Column Name="formID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="studentID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="courseWaived" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="courseSubstitued" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="reason" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="requstedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="registrarDecision" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="registrarComments" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="registrarInitials" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="registrarDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="entryDecision" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="entryComments" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="entryInitials" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="entryDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

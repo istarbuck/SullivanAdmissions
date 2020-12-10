@@ -1,0 +1,1768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7113256E-08C7-4C3B-B8EE-18ADE884CB1B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Admissions</RootNamespace>
+    <AssemblyName>Admissions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocX, Version=1.0.0.22, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\DocX.1.0.0.22\lib\net40\DocX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InternationalReferral.aspx" />
+    <Content Include="AcceptanceAssessment.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\EmailConfirmation.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="AdmissionsChecklist.aspx" />
+    <Content Include="AlumniUnderstanding.aspx" />
+    <Content Include="AcademicWaiver\Default.aspx" />
+    <Content Include="COPConfirmation.aspx" />
+    <Content Include="EnrollmentPayment.aspx" />
+    <Content Include="JumpStartProgramUnderstanding.aspx" />
+    <Content Include="FirstQuarterScheduleRequest.aspx" />
+    <Content Include="BackGroundScreening.aspx" />
+    <Content Include="Panels\BackgroundScreening.ascx" />
+    <Content Include="Panels\JumpStartSOI.ascx" />
+    <Content Include="PayFees.aspx" />
+    <Content Include="Scripts\Jquery_3.3.1min.js" />
+    <Content Include="SOPChange.aspx" />
+    <Content Include="APATest.aspx" />
+    <Content Include="Applications.aspx" />
+    <Content Include="CollegeOfPharmacy.aspx" />
+    <Content Include="Confirmation.aspx" />
+    <Content Include="ContactAO.aspx" />
+    <Content Include="COPDeposit.aspx" />
+    <Content Include="COPDisabled.aspx" />
+    <Content Include="COPOfferAcceptance.aspx" />
+    <Content Include="COPPayment.aspx" />
+    <Content Include="COPROI.aspx" />
+    <Content Include="COPTuitionRates.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DisabilityDisclosure.aspx" />
+    <Content Include="DrugInfoRequest.aspx" />
+    <Content Include="EnrollmentAgreement.aspx" />
+    <Content Include="EnrollmentFeeAgreement.aspx" />
+    <Content Include="EnrollmentFeeWaiver.aspx" />
+    <Content Include="EnrollmentPaymentOld.aspx" />
+    <Content Include="ESLiPayment.aspx" />
+    <Content Include="FERPA.aspx" />
+    <Content Include="FirstQuarterScheduleRequestOld.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="GradRegistration.aspx" />
+    <Content Include="GradSchoolAcceptance.aspx" />
+    <Content Include="HIM.aspx" />
+    <Content Include="Housing.aspx" />
+    <Content Include="HousingPayment.aspx" />
+    <Content Include="img\amex.png" />
+    <Content Include="img\Bachelor.png" />
+    <Content Include="img\Business.png" />
+    <Content Include="img\BusinessContract.png" />
+    <Content Include="img\BusinessContract.tif" />
+    <Content Include="img\BusinessCredit.png" />
+    <Content Include="img\computerRequirements.png" />
+    <Content Include="img\COPAcceptanceSig.png" />
+    <Content Include="img\COPLogo.png" />
+    <Content Include="img\COPLogoLarge.png" />
+    <Content Include="img\DisclosureForm.png" />
+    <Content Include="img\Discover.png" />
+    <Content Include="img\FortKnoxRates.png" />
+    <Content Include="img\FortKnoxRates2018.png" />
+    <Content Include="img\Graduate.jpg" />
+    <Content Include="img\Graduate.png" />
+    <Content Include="img\GraduateOld.png" />
+    <Content Include="img\HedgeHug.jpg" />
+    <Content Include="img\home-hdr-gradient.jpg" />
+    <Content Include="img\IT.png" />
+    <Content Include="img\ITContract.png" />
+    <Content Include="img\ITCredit.png" />
+    <Content Include="img\MasterCard.png" />
+    <Content Include="img\NCHS.png" />
+    <Content Include="img\NCHSContract.png" />
+    <Content Include="img\NCHSCredit.png" />
+    <Content Include="img\OnlineAssociate.png" />
+    <Content Include="img\OnlineBachelor.png" />
+    <Content Include="img\sull-logo-white.png" />
+    <Content Include="img\sus_logo.gif" />
+    <Content Include="img\sus_logo.png" />
+    <Content Include="img\tuitionRates.tiff" />
+    <Content Include="img\Visa.png" />
+    <Content Include="InternationalAppConfirm.aspx" />
+    <Content Include="InternationalApplication.aspx" />
+    <Content Include="InternationalEnrollmentFee.aspx" />
+    <Content Include="InternationalHousing.aspx" />
+    <Content Include="InternationalPaymentConfirm.aspx" />
+    <Content Include="InternationalRegConfirm.aspx" />
+    <Content Include="InternationalRegistration.aspx" />
+    <Content Include="IPED.aspx" />
+    <Content Include="KYResident.aspx" />
+    <Content Include="MBAAccounting.aspx" />
+    <Content Include="MilitaryVerification.aspx" />
+    <Content Include="NCHS.aspx" />
+    <Content Include="NewRegistration.aspx" />
+    <Content Include="NewStudentEnrollmentAgreement.aspx" />
+    <Content Include="PADeposit.aspx" />
+    <Content Include="Panels\AcademicSupportFee.ascx" />
+    <Content Include="Panels\AlumniUnderstanding.ascx" />
+    <Content Include="Panels\AOEmail.ascx" />
+    <Content Include="Panels\CampusSelectSullivan.ascx" />
+    <Content Include="Panels\Catalog.ascx" />
+    <Content Include="Panels\CompanyDefferment.ascx" />
+    <Content Include="Panels\ComputerRequirements.ascx" />
+    <Content Include="Panels\COPEnrollmentInfo.ascx" />
+    <Content Include="Panels\COPSupplemental.ascx" />
+    <Content Include="Panels\COPTuitionRates.ascx" />
+    <Content Include="Panels\CreditDisclosure.ascx" />
+    <Content Include="Panels\CreditHourAgreement.ascx" />
+    <Content Include="Panels\disclosurePDF.ascx" />
+    <Content Include="Panels\EmergencyContact.ascx" />
+    <Content Include="Panels\EnrollmentAcknowledgement.ascx" />
+    <Content Include="Panels\EnrollmentFee.ascx" />
+    <Content Include="Panels\EnrollmentInfo.ascx" />
+    <Content Include="Panels\EnrollmentTuition.ascx" />
+    <Content Include="Panels\Ethnicity.ascx" />
+    <Content Include="Panels\FERPA1.ascx" />
+    <Content Include="Panels\FinancialObligation.ascx" />
+    <Content Include="Panels\HIMDisclaimer.ascx" />
+    <Content Include="Panels\HIMWaiver.ascx" />
+    <Content Include="Panels\Housing.ascx" />
+    <Content Include="Panels\HybridDatePayment.ascx" />
+    <Content Include="Panels\InternationalEnrollmentInfo.ascx" />
+    <Content Include="Panels\InternationalHousing.ascx" />
+    <Content Include="Panels\InternationalPersonalInfo.ascx" />
+    <Content Include="Panels\InternationalRegCollege.ascx" />
+    <Content Include="Panels\InternationalSchoolInfo.ascx" />
+    <Content Include="Panels\InternationalTuitionRates.ascx" />
+    <Content Include="Panels\IPED.ascx" />
+    <Content Include="Panels\KYResident.ascx" />
+    <Content Include="Panels\MBAAccounting.ascx" />
+    <Content Include="Panels\MedicalAssistant.ascx" />
+    <Content Include="Panels\NCHSESign.ascx" />
+    <Content Include="Panels\NCHSPDF.ascx" />
+    <Content Include="Panels\NCHSPersonalInfo.ascx" />
+    <Content Include="Panels\NewRegistration.ascx" />
+    <Content Include="Panels\PAAdditionalRequirements.ascx" />
+    <Content Include="Panels\PAEnrollmentInfo.ascx" />
+    <Content Include="Panels\PAROIVerification.ascx" />
+    <Content Include="Panels\PASchoolInfo.ascx" />
+    <Content Include="Panels\PASupplemental.ascx" />
+    <Content Include="Panels\PATuitionRates.ascx" />
+    <Content Include="Panels\PersonalInfo.ascx" />
+    <Content Include="Panels\PersonalInfoAlumni.ascx" />
+    <Content Include="Panels\PersonalInfoGradRegistration.ascx" />
+    <Content Include="Panels\PersonalInfoRegistration.ascx" />
+    <Content Include="Panels\PersonalInfoRouting.ascx" />
+    <Content Include="Panels\PersonalInfoTranscript.ascx" />
+    <Content Include="Panels\PharmAcceptance.ascx" />
+    <Content Include="Panels\PharmBackground.ascx" />
+    <Content Include="Panels\PharmESign.ascx" />
+    <Content Include="Panels\PharmPDF.ascx" />
+    <Content Include="Panels\PharmPersonalInfo.ascx" />
+    <Content Include="Panels\PharmRelease.ascx" />
+    <Content Include="Panels\PositiveDiscipline.ascx" />
+    <Content Include="Panels\ReEntryContract.ascx" />
+    <Content Include="Panels\ReEntrySupplemental.ascx" />
+    <Content Include="Panels\ReEntryTuitionRates.ascx" />
+    <Content Include="Panels\SchoolInfo.ascx" />
+    <Content Include="Panels\StudentESig.ascx" />
+    <Content Include="Panels\SupplementA.ascx" />
+    <Content Include="Panels\TranscriptESign.ascx" />
+    <Content Include="Panels\TranscriptESignRegistration.ascx" />
+    <Content Include="Panels\TransferOfCredits.ascx" />
+    <Content Include="Panels\TuitionPDF.ascx" />
+    <Content Include="Panels\TuitionRates.ascx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Error\DefaultRedirectErrorPage.aspx" />
+    <Content Include="Error\GenericErrorPage.aspx" />
+    <Content Include="Error\Http404ErrorPage.aspx" />
+    <Content Include="Error\HttpErrorPage.aspx" />
+    <Content Include="ESignature\flashcanvas.js" />
+    <Content Include="ESignature\flashcanvas.swf" />
+    <Content Include="ESignature\jquery.signaturepad.css" />
+    <Content Include="ESignature\jquery.signaturepad.js" />
+    <Content Include="ESignature\jquery.signaturepad.min.js" />
+    <Content Include="ESignature\json2.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="PayFeesOld.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="PaymentConfirmation.aspx" />
+    <Content Include="PHDDeposit.aspx" />
+    <Content Include="PhysicianAssistant.aspx" />
+    <Content Include="PhysicianAssistantDeposit.aspx" />
+    <Content Include="pt.aspx" />
+    <Content Include="ReEntry.aspx" />
+    <Content Include="ReEntryConfirmation.aspx" />
+    <Content Include="ReEntryEnrollmentAgreement.aspx" />
+    <Content Include="ReEntryForegivenessSOA.aspx" />
+    <Content Include="ReEntryIPEDConfirmation.aspx" />
+    <Content Include="refund.htm" />
+    <Content Include="RegConfirm.aspx" />
+    <Content Include="ScholarshipDonation.aspx" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MsAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Models\PersonalInfo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>PersonalInfo.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\accounting.js" />
+    <Content Include="Scripts\FixFocus3.js" />
+    <Content Include="Scripts\jquery.json-2.4.min.js" />
+    <Content Include="Scripts\Jquery_2.1.4.js" />
+    <Content Include="Scripts\materialize.min.js" />
+    <Content Include="Scripts\modernizr-custom.js" />
+    <Content Include="Scripts\secure.submit-1.0.2.js" />
+    <Content Include="security.htm" />
+    <Content Include="StudentIPED.aspx" />
+    <Content Include="TranscriptEvaluation.aspx" />
+    <Content Include="TranscriptPayments.aspx" />
+    <Content Include="TranscriptRequest.aspx" />
+    <Content Include="TransferCreditWaiver.aspx" />
+    <Content Include="TransferOfCredits.aspx" />
+    <Content Include="VerificationForm.aspx" />
+    <Content Include="Models\StudentInfo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>StudentInfo1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MaterialDesign.Master" />
+    <Content Include="packages.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InternationalReferral.aspx.cs">
+      <DependentUpon>InternationalReferral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalReferral.aspx.designer.cs">
+      <DependentUpon>InternationalReferral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceAssessment.aspx.cs">
+      <DependentUpon>AcceptanceAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptanceAssessment.aspx.designer.cs">
+      <DependentUpon>AcceptanceAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\EmailConfirmation.aspx.cs">
+      <DependentUpon>EmailConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\EmailConfirmation.aspx.designer.cs">
+      <DependentUpon>EmailConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionsChecklist.aspx.cs">
+      <DependentUpon>AdmissionsChecklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionsChecklist.aspx.designer.cs">
+      <DependentUpon>AdmissionsChecklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniUnderstanding.aspx.cs">
+      <DependentUpon>AlumniUnderstanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlumniUnderstanding.aspx.designer.cs">
+      <DependentUpon>AlumniUnderstanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicWaiver\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcademicWaiver\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPConfirmation.aspx.cs">
+      <DependentUpon>COPConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPConfirmation.aspx.designer.cs">
+      <DependentUpon>COPConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentPayment.aspx.cs">
+      <DependentUpon>EnrollmentPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollmentPayment.aspx.designer.cs">
+      <DependentUpon>EnrollmentPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JumpStartProgramUnderstanding.aspx.cs">
+      <DependentUpon>JumpStartProgramUnderstanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JumpStartProgramUnderstanding.aspx.designer.cs">
+      <DependentUpon>JumpStartProgramUnderstanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstQuarterScheduleRequest.aspx.cs">
+      <DependentUpon>FirstQuarterScheduleRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstQuarterScheduleRequest.aspx.designer.cs">
+      <DependentUpon>FirstQuarterScheduleRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackGroundScreening.aspx.cs">
+      <DependentUpon>BackGroundScreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackGroundScreening.aspx.designer.cs">
+      <DependentUpon>BackGroundScreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcademicWaiverdbml.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcademicWaiverdbml.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\BackgroundScreening.ascx.cs">
+      <DependentUpon>BackgroundScreening.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\BackgroundScreening.ascx.designer.cs">
+      <DependentUpon>BackgroundScreening.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Program - Copy1.designer.cs">
+      <DependentUpon>Program - Copy.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Panels\JumpStartSOI.ascx.cs">
+      <DependentUpon>JumpStartSOI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\JumpStartSOI.ascx.designer.cs">
+      <DependentUpon>JumpStartSOI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PayFees.aspx.cs">
+      <DependentUpon>PayFees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayFees.aspx.designer.cs">
+      <DependentUpon>PayFees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOPChange.aspx.cs">
+      <DependentUpon>SOPChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOPChange.aspx.designer.cs">
+      <DependentUpon>SOPChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="APATest.aspx.cs">
+      <DependentUpon>APATest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APATest.aspx.designer.cs">
+      <DependentUpon>APATest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Applications.aspx.cs">
+      <DependentUpon>Applications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Applications.aspx.designer.cs">
+      <DependentUpon>Applications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CollegeOfPharmacy.aspx.cs">
+      <DependentUpon>CollegeOfPharmacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollegeOfPharmacy.aspx.designer.cs">
+      <DependentUpon>CollegeOfPharmacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.aspx.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation.aspx.designer.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactAO.aspx.cs">
+      <DependentUpon>ContactAO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactAO.aspx.designer.cs">
+      <DependentUpon>ContactAO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPDeposit.aspx.cs">
+      <DependentUpon>COPDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPDeposit.aspx.designer.cs">
+      <DependentUpon>COPDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPDisabled.aspx.cs">
+      <DependentUpon>COPDisabled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPDisabled.aspx.designer.cs">
+      <DependentUpon>COPDisabled.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPOfferAcceptance.aspx.cs">
+      <DependentUpon>COPOfferAcceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPOfferAcceptance.aspx.designer.cs">
+      <DependentUpon>COPOfferAcceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPPayment.aspx.cs">
+      <DependentUpon>COPPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPPayment.aspx.designer.cs">
+      <DependentUpon>COPPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPROI.aspx.cs">
+      <DependentUpon>COPROI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPROI.aspx.designer.cs">
+      <DependentUpon>COPROI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COPTuitionRates.aspx.cs">
+      <DependentUpon>COPTuitionRates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COPTuitionRates.aspx.designer.cs">
+      <DependentUpon>COPTuitionRates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisabilityDisclosure.aspx.cs">
+      <DependentUpon>DisabilityDisclosure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisabilityDisclosure.aspx.designer.cs">
+      <DependentUpon>DisabilityDisclosure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugInfoRequest.aspx.cs">
+      <DependentUpon>DrugInfoRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugInfoRequest.aspx.designer.cs">
+      <DependentUpon>DrugInfoRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentAgreement.aspx.cs">
+      <DependentUpon>EnrollmentAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollmentAgreement.aspx.designer.cs">
+      <DependentUpon>EnrollmentAgreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentFeeAgreement.aspx.cs">
+      <DependentUpon>EnrollmentFeeAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollmentFeeAgreement.aspx.designer.cs">
+      <DependentUpon>EnrollmentFeeAgreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentFeeWaiver.aspx.cs">
+      <DependentUpon>EnrollmentFeeWaiver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollmentFeeWaiver.aspx.designer.cs">
+      <DependentUpon>EnrollmentFeeWaiver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentPaymentOld.aspx.cs">
+      <DependentUpon>EnrollmentPaymentOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollmentPaymentOld.aspx.designer.cs">
+      <DependentUpon>EnrollmentPaymentOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESLiPayment.aspx.cs">
+      <DependentUpon>ESLiPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESLiPayment.aspx.designer.cs">
+      <DependentUpon>ESLiPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FERPA.aspx.cs">
+      <DependentUpon>FERPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FERPA.aspx.designer.cs">
+      <DependentUpon>FERPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstQuarterScheduleRequestOld.aspx.cs">
+      <DependentUpon>FirstQuarterScheduleRequestOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstQuarterScheduleRequestOld.aspx.designer.cs">
+      <DependentUpon>FirstQuarterScheduleRequestOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GradRegistration.aspx.cs">
+      <DependentUpon>GradRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradRegistration.aspx.designer.cs">
+      <DependentUpon>GradRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradSchoolAcceptance.aspx.cs">
+      <DependentUpon>GradSchoolAcceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradSchoolAcceptance.aspx.designer.cs">
+      <DependentUpon>GradSchoolAcceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HIM.aspx.cs">
+      <DependentUpon>HIM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HIM.aspx.designer.cs">
+      <DependentUpon>HIM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Housing.aspx.cs">
+      <DependentUpon>Housing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Housing.aspx.designer.cs">
+      <DependentUpon>Housing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HousingPayment.aspx.cs">
+      <DependentUpon>HousingPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HousingPayment.aspx.designer.cs">
+      <DependentUpon>HousingPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalAppConfirm.aspx.cs">
+      <DependentUpon>InternationalAppConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalAppConfirm.aspx.designer.cs">
+      <DependentUpon>InternationalAppConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalApplication.aspx.cs">
+      <DependentUpon>InternationalApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalApplication.aspx.designer.cs">
+      <DependentUpon>InternationalApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalEnrollmentFee.aspx.cs">
+      <DependentUpon>InternationalEnrollmentFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalEnrollmentFee.aspx.designer.cs">
+      <DependentUpon>InternationalEnrollmentFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalHousing.aspx.cs">
+      <DependentUpon>InternationalHousing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalHousing.aspx.designer.cs">
+      <DependentUpon>InternationalHousing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalPaymentConfirm.aspx.cs">
+      <DependentUpon>InternationalPaymentConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalPaymentConfirm.aspx.designer.cs">
+      <DependentUpon>InternationalPaymentConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalRegConfirm.aspx.cs">
+      <DependentUpon>InternationalRegConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalRegConfirm.aspx.designer.cs">
+      <DependentUpon>InternationalRegConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalRegistration.aspx.cs">
+      <DependentUpon>InternationalRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalRegistration.aspx.designer.cs">
+      <DependentUpon>InternationalRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPED.aspx.cs">
+      <DependentUpon>IPED.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPED.aspx.designer.cs">
+      <DependentUpon>IPED.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KYResident.aspx.cs">
+      <DependentUpon>KYResident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KYResident.aspx.designer.cs">
+      <DependentUpon>KYResident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialDesign.Master.cs">
+      <DependentUpon>MaterialDesign.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialDesign.Master.designer.cs">
+      <DependentUpon>MaterialDesign.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MBAAccounting.aspx.cs">
+      <DependentUpon>MBAAccounting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBAAccounting.aspx.designer.cs">
+      <DependentUpon>MBAAccounting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryVerification.aspx.cs">
+      <DependentUpon>MilitaryVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilitaryVerification.aspx.designer.cs">
+      <DependentUpon>MilitaryVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FieldInfo.cs" />
+    <Compile Include="Models\Program.designer.cs" />
+    <Compile Include="Models\Program1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Program.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoutingRules.cs" />
+    <Compile Include="Models\TiffCreator.cs" />
+    <Compile Include="Models\UserCustom.cs" />
+    <Compile Include="NCHS.aspx.cs">
+      <DependentUpon>NCHS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCHS.aspx.designer.cs">
+      <DependentUpon>NCHS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewRegistration.aspx.cs">
+      <DependentUpon>NewRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewRegistration.aspx.designer.cs">
+      <DependentUpon>NewRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewStudentEnrollmentAgreement.aspx.cs">
+      <DependentUpon>NewStudentEnrollmentAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewStudentEnrollmentAgreement.aspx.designer.cs">
+      <DependentUpon>NewStudentEnrollmentAgreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PADeposit.aspx.cs">
+      <DependentUpon>PADeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PADeposit.aspx.designer.cs">
+      <DependentUpon>PADeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\AcademicSupportFee.ascx.cs">
+      <DependentUpon>AcademicSupportFee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\AcademicSupportFee.ascx.designer.cs">
+      <DependentUpon>AcademicSupportFee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\AlumniUnderstanding.ascx.cs">
+      <DependentUpon>AlumniUnderstanding.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\AlumniUnderstanding.ascx.designer.cs">
+      <DependentUpon>AlumniUnderstanding.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\AOEmail.ascx.cs">
+      <DependentUpon>AOEmail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\AOEmail.ascx.designer.cs">
+      <DependentUpon>AOEmail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CampusSelectSullivan.ascx.cs">
+      <DependentUpon>CampusSelectSullivan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\CampusSelectSullivan.ascx.designer.cs">
+      <DependentUpon>CampusSelectSullivan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Catalog.ascx.cs">
+      <DependentUpon>Catalog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\Catalog.ascx.designer.cs">
+      <DependentUpon>Catalog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CompanyDefferment.ascx.cs">
+      <DependentUpon>CompanyDefferment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\CompanyDefferment.ascx.designer.cs">
+      <DependentUpon>CompanyDefferment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ComputerRequirements.ascx.cs">
+      <DependentUpon>ComputerRequirements.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\ComputerRequirements.ascx.designer.cs">
+      <DependentUpon>ComputerRequirements.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\COPEnrollmentInfo.ascx.cs">
+      <DependentUpon>COPEnrollmentInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\COPEnrollmentInfo.ascx.designer.cs">
+      <DependentUpon>COPEnrollmentInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\COPSupplemental.ascx.cs">
+      <DependentUpon>COPSupplemental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\COPSupplemental.ascx.designer.cs">
+      <DependentUpon>COPSupplemental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\COPTuitionRates.ascx.cs">
+      <DependentUpon>COPTuitionRates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\COPTuitionRates.ascx.designer.cs">
+      <DependentUpon>COPTuitionRates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CreditDisclosure.ascx.cs">
+      <DependentUpon>CreditDisclosure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\CreditDisclosure.ascx.designer.cs">
+      <DependentUpon>CreditDisclosure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CreditHourAgreement.ascx.cs">
+      <DependentUpon>CreditHourAgreement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\CreditHourAgreement.ascx.designer.cs">
+      <DependentUpon>CreditHourAgreement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\disclosurePDF.ascx.cs">
+      <DependentUpon>disclosurePDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\disclosurePDF.ascx.designer.cs">
+      <DependentUpon>disclosurePDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\EmergencyContact.ascx.cs">
+      <DependentUpon>EmergencyContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\EmergencyContact.ascx.designer.cs">
+      <DependentUpon>EmergencyContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\EnrollmentAcknowledgement.ascx.cs">
+      <DependentUpon>EnrollmentAcknowledgement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\EnrollmentAcknowledgement.ascx.designer.cs">
+      <DependentUpon>EnrollmentAcknowledgement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\EnrollmentFee.ascx.cs">
+      <DependentUpon>EnrollmentFee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\EnrollmentFee.ascx.designer.cs">
+      <DependentUpon>EnrollmentFee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\EnrollmentInfo.ascx.cs">
+      <DependentUpon>EnrollmentInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\EnrollmentInfo.ascx.designer.cs">
+      <DependentUpon>EnrollmentInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\EnrollmentTuition.ascx.cs">
+      <DependentUpon>EnrollmentTuition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\EnrollmentTuition.ascx.designer.cs">
+      <DependentUpon>EnrollmentTuition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Ethnicity.ascx.cs">
+      <DependentUpon>Ethnicity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\Ethnicity.ascx.designer.cs">
+      <DependentUpon>Ethnicity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\FERPA1.ascx.cs">
+      <DependentUpon>FERPA1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\FERPA1.ascx.designer.cs">
+      <DependentUpon>FERPA1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\FinancialObligation.ascx.cs">
+      <DependentUpon>FinancialObligation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\FinancialObligation.ascx.designer.cs">
+      <DependentUpon>FinancialObligation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\HIMDisclaimer.ascx.cs">
+      <DependentUpon>HIMDisclaimer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\HIMDisclaimer.ascx.designer.cs">
+      <DependentUpon>HIMDisclaimer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\HIMWaiver.ascx.cs">
+      <DependentUpon>HIMWaiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\HIMWaiver.ascx.designer.cs">
+      <DependentUpon>HIMWaiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Housing.ascx.cs">
+      <DependentUpon>Housing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\Housing.ascx.designer.cs">
+      <DependentUpon>Housing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\HybridDatePayment.ascx.cs">
+      <DependentUpon>HybridDatePayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\HybridDatePayment.ascx.designer.cs">
+      <DependentUpon>HybridDatePayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InternationalEnrollmentInfo.ascx.cs">
+      <DependentUpon>InternationalEnrollmentInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\InternationalEnrollmentInfo.ascx.designer.cs">
+      <DependentUpon>InternationalEnrollmentInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InternationalHousing.ascx.cs">
+      <DependentUpon>InternationalHousing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\InternationalHousing.ascx.designer.cs">
+      <DependentUpon>InternationalHousing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InternationalPersonalInfo.ascx.cs">
+      <DependentUpon>InternationalPersonalInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\InternationalPersonalInfo.ascx.designer.cs">
+      <DependentUpon>InternationalPersonalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InternationalRegCollege.ascx.cs">
+      <DependentUpon>InternationalRegCollege.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\InternationalRegCollege.ascx.designer.cs">
+      <DependentUpon>InternationalRegCollege.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InternationalSchoolInfo.ascx.cs">
+      <DependentUpon>InternationalSchoolInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\InternationalSchoolInfo.ascx.designer.cs">
+      <DependentUpon>InternationalSchoolInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InternationalTuitionRates.ascx.cs">
+      <DependentUpon>InternationalTuitionRates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\InternationalTuitionRates.ascx.designer.cs">
+      <DependentUpon>InternationalTuitionRates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\IPED.ascx.cs">
+      <DependentUpon>IPED.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\IPED.ascx.designer.cs">
+      <DependentUpon>IPED.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\KYResident.ascx.cs">
+      <DependentUpon>KYResident.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\KYResident.ascx.designer.cs">
+      <DependentUpon>KYResident.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\MBAAccounting.ascx.cs">
+      <DependentUpon>MBAAccounting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\MBAAccounting.ascx.designer.cs">
+      <DependentUpon>MBAAccounting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\MedicalAssistant.ascx.cs">
+      <DependentUpon>MedicalAssistant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\MedicalAssistant.ascx.designer.cs">
+      <DependentUpon>MedicalAssistant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NCHSESign.ascx.cs">
+      <DependentUpon>NCHSESign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\NCHSESign.ascx.designer.cs">
+      <DependentUpon>NCHSESign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NCHSPDF.ascx.cs">
+      <DependentUpon>NCHSPDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\NCHSPDF.ascx.designer.cs">
+      <DependentUpon>NCHSPDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NCHSPersonalInfo.ascx.cs">
+      <DependentUpon>NCHSPersonalInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\NCHSPersonalInfo.ascx.designer.cs">
+      <DependentUpon>NCHSPersonalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NewRegistration.ascx.cs">
+      <DependentUpon>NewRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\NewRegistration.ascx.designer.cs">
+      <DependentUpon>NewRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PAAdditionalRequirements.ascx.cs">
+      <DependentUpon>PAAdditionalRequirements.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PAAdditionalRequirements.ascx.designer.cs">
+      <DependentUpon>PAAdditionalRequirements.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PAEnrollmentInfo.ascx.cs">
+      <DependentUpon>PAEnrollmentInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PAEnrollmentInfo.ascx.designer.cs">
+      <DependentUpon>PAEnrollmentInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PAROIVerification.ascx.cs">
+      <DependentUpon>PAROIVerification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PAROIVerification.ascx.designer.cs">
+      <DependentUpon>PAROIVerification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PASchoolInfo.ascx.cs">
+      <DependentUpon>PASchoolInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PASchoolInfo.ascx.designer.cs">
+      <DependentUpon>PASchoolInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PASupplemental.ascx.cs">
+      <DependentUpon>PASupplemental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PASupplemental.ascx.designer.cs">
+      <DependentUpon>PASupplemental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PATuitionRates.ascx.cs">
+      <DependentUpon>PATuitionRates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PATuitionRates.ascx.designer.cs">
+      <DependentUpon>PATuitionRates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PersonalInfo.ascx.cs">
+      <DependentUpon>PersonalInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PersonalInfo.ascx.designer.cs">
+      <DependentUpon>PersonalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoAlumni.ascx.cs">
+      <DependentUpon>PersonalInfoAlumni.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoAlumni.ascx.designer.cs">
+      <DependentUpon>PersonalInfoAlumni.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoGradRegistration.ascx.cs">
+      <DependentUpon>PersonalInfoGradRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoGradRegistration.ascx.designer.cs">
+      <DependentUpon>PersonalInfoGradRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoRegistration.ascx.cs">
+      <DependentUpon>PersonalInfoRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoRegistration.ascx.designer.cs">
+      <DependentUpon>PersonalInfoRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoRouting.ascx.cs">
+      <DependentUpon>PersonalInfoRouting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoRouting.ascx.designer.cs">
+      <DependentUpon>PersonalInfoRouting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoTranscript.ascx.cs">
+      <DependentUpon>PersonalInfoTranscript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PersonalInfoTranscript.ascx.designer.cs">
+      <DependentUpon>PersonalInfoTranscript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PharmAcceptance.ascx.cs">
+      <DependentUpon>PharmAcceptance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PharmAcceptance.ascx.designer.cs">
+      <DependentUpon>PharmAcceptance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PharmBackground.ascx.cs">
+      <DependentUpon>PharmBackground.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PharmBackground.ascx.designer.cs">
+      <DependentUpon>PharmBackground.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PharmESign.ascx.cs">
+      <DependentUpon>PharmESign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PharmESign.ascx.designer.cs">
+      <DependentUpon>PharmESign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PharmPDF.ascx.cs">
+      <DependentUpon>PharmPDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PharmPDF.ascx.designer.cs">
+      <DependentUpon>PharmPDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PharmPersonalInfo.ascx.cs">
+      <DependentUpon>PharmPersonalInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PharmPersonalInfo.ascx.designer.cs">
+      <DependentUpon>PharmPersonalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PharmRelease.ascx.cs">
+      <DependentUpon>PharmRelease.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PharmRelease.ascx.designer.cs">
+      <DependentUpon>PharmRelease.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PositiveDiscipline.ascx.cs">
+      <DependentUpon>PositiveDiscipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\PositiveDiscipline.ascx.designer.cs">
+      <DependentUpon>PositiveDiscipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ReEntryContract.ascx.cs">
+      <DependentUpon>ReEntryContract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\ReEntryContract.ascx.designer.cs">
+      <DependentUpon>ReEntryContract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ReEntrySupplemental.ascx.cs">
+      <DependentUpon>ReEntrySupplemental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\ReEntrySupplemental.ascx.designer.cs">
+      <DependentUpon>ReEntrySupplemental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ReEntryTuitionRates.ascx.cs">
+      <DependentUpon>ReEntryTuitionRates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\ReEntryTuitionRates.ascx.designer.cs">
+      <DependentUpon>ReEntryTuitionRates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\SchoolInfo.ascx.cs">
+      <DependentUpon>SchoolInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\SchoolInfo.ascx.designer.cs">
+      <DependentUpon>SchoolInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\StudentESig.ascx.cs">
+      <DependentUpon>StudentESig.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\StudentESig.ascx.designer.cs">
+      <DependentUpon>StudentESig.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\SupplementA.ascx.cs">
+      <DependentUpon>SupplementA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\SupplementA.ascx.designer.cs">
+      <DependentUpon>SupplementA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TranscriptESign.ascx.cs">
+      <DependentUpon>TranscriptESign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\TranscriptESign.ascx.designer.cs">
+      <DependentUpon>TranscriptESign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TranscriptESignRegistration.ascx.cs">
+      <DependentUpon>TranscriptESignRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\TranscriptESignRegistration.ascx.designer.cs">
+      <DependentUpon>TranscriptESignRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TransferOfCredits.ascx.cs">
+      <DependentUpon>TransferOfCredits.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\TransferOfCredits.ascx.designer.cs">
+      <DependentUpon>TransferOfCredits.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TuitionPDF.ascx.cs">
+      <DependentUpon>TuitionPDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\TuitionPDF.ascx.designer.cs">
+      <DependentUpon>TuitionPDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TuitionRates.ascx.cs">
+      <DependentUpon>TuitionRates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels\TuitionRates.ascx.designer.cs">
+      <DependentUpon>TuitionRates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StudentInfo.designer.cs" />
+    <Compile Include="Models\StudentInfo1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentInfo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Error\ExceptionUtility.cs" />
+    <Compile Include="Migrations\201707101447454_EnrollmentType.cs" />
+    <Compile Include="Migrations\201707101447454_EnrollmentType.Designer.cs">
+      <DependentUpon>201707101447454_EnrollmentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManageForms.cs" />
+    <Compile Include="Migrations\201706161957523_InitialCreate.cs" />
+    <Compile Include="Migrations\201706161957523_InitialCreate.Designer.cs">
+      <DependentUpon>201706161957523_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706201817530_FirstName.cs" />
+    <Compile Include="Migrations\201706201817530_FirstName.Designer.cs">
+      <DependentUpon>201706201817530_FirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706201901056_PersonalInfo.cs" />
+    <Compile Include="Migrations\201706201901056_PersonalInfo.Designer.cs">
+      <DependentUpon>201706201901056_PersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706221323446_routingInfo.cs" />
+    <Compile Include="Migrations\201706221323446_routingInfo.Designer.cs">
+      <DependentUpon>201706221323446_routingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706221427354_Alumni.cs" />
+    <Compile Include="Migrations\201706221427354_Alumni.Designer.cs">
+      <DependentUpon>201706221427354_Alumni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AdditionalDocs.cs" />
+    <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\FormatFields.cs" />
+    <Compile Include="Models\Dynamic.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\PersonalInfo.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalInfo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="PayFeesOld.aspx.cs">
+      <DependentUpon>PayFeesOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayFeesOld.aspx.designer.cs">
+      <DependentUpon>PayFeesOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentConfirmation.aspx.cs">
+      <DependentUpon>PaymentConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentConfirmation.aspx.designer.cs">
+      <DependentUpon>PaymentConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PHDDeposit.aspx.cs">
+      <DependentUpon>PHDDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PHDDeposit.aspx.designer.cs">
+      <DependentUpon>PHDDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianAssistant.aspx.cs">
+      <DependentUpon>PhysicianAssistant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhysicianAssistant.aspx.designer.cs">
+      <DependentUpon>PhysicianAssistant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianAssistantDeposit.aspx.cs">
+      <DependentUpon>PhysicianAssistantDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhysicianAssistantDeposit.aspx.designer.cs">
+      <DependentUpon>PhysicianAssistantDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pt.aspx.cs">
+      <DependentUpon>pt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pt.aspx.designer.cs">
+      <DependentUpon>pt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReEntry.aspx.cs">
+      <DependentUpon>ReEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReEntry.aspx.designer.cs">
+      <DependentUpon>ReEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReEntryConfirmation.aspx.cs">
+      <DependentUpon>ReEntryConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReEntryConfirmation.aspx.designer.cs">
+      <DependentUpon>ReEntryConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReEntryEnrollmentAgreement.aspx.cs">
+      <DependentUpon>ReEntryEnrollmentAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReEntryEnrollmentAgreement.aspx.designer.cs">
+      <DependentUpon>ReEntryEnrollmentAgreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReEntryForegivenessSOA.aspx.cs">
+      <DependentUpon>ReEntryForegivenessSOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReEntryForegivenessSOA.aspx.designer.cs">
+      <DependentUpon>ReEntryForegivenessSOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReEntryIPEDConfirmation.aspx.cs">
+      <DependentUpon>ReEntryIPEDConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReEntryIPEDConfirmation.aspx.designer.cs">
+      <DependentUpon>ReEntryIPEDConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegConfirm.aspx.cs">
+      <DependentUpon>RegConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegConfirm.aspx.designer.cs">
+      <DependentUpon>RegConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScholarshipDonation.aspx.cs">
+      <DependentUpon>ScholarshipDonation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScholarshipDonation.aspx.designer.cs">
+      <DependentUpon>ScholarshipDonation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="StudentIPED.aspx.cs">
+      <DependentUpon>StudentIPED.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentIPED.aspx.designer.cs">
+      <DependentUpon>StudentIPED.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TranscriptEvaluation.aspx.cs">
+      <DependentUpon>TranscriptEvaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TranscriptEvaluation.aspx.designer.cs">
+      <DependentUpon>TranscriptEvaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TranscriptPayments.aspx.cs">
+      <DependentUpon>TranscriptPayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TranscriptPayments.aspx.designer.cs">
+      <DependentUpon>TranscriptPayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TranscriptRequest.aspx.cs">
+      <DependentUpon>TranscriptRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TranscriptRequest.aspx.designer.cs">
+      <DependentUpon>TranscriptRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferCreditWaiver.aspx.cs">
+      <DependentUpon>TransferCreditWaiver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferCreditWaiver.aspx.designer.cs">
+      <DependentUpon>TransferCreditWaiver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferOfCredits.aspx.cs">
+      <DependentUpon>TransferOfCredits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferOfCredits.aspx.designer.cs">
+      <DependentUpon>TransferOfCredits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationForm.aspx.cs">
+      <DependentUpon>VerificationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerificationForm.aspx.designer.cs">
+      <DependentUpon>VerificationForm.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ESigImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\AcademicWaiverdbml.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AcademicWaiverdbml.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Models\PersonalInfo.dbml.layout">
+      <DependentUpon>PersonalInfo.dbml</DependentUpon>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Models\Program.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Program1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Program - Copy.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Program - Copy1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706161957523_InitialCreate.resx">
+      <DependentUpon>201706161957523_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201817530_FirstName.resx">
+      <DependentUpon>201706201817530_FirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201901056_PersonalInfo.resx">
+      <DependentUpon>201706201901056_PersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706221323446_routingInfo.resx">
+      <DependentUpon>201706221323446_routingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706221427354_Alumni.resx">
+      <DependentUpon>201706221427354_Alumni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707101447454_EnrollmentType.resx">
+      <DependentUpon>201707101447454_EnrollmentType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Program - Copy.dbml.layout">
+      <DependentUpon>Program - Copy.dbml</DependentUpon>
+    </None>
+    <None Include="Models\AcademicWaiverdbml.dbml.layout">
+      <DependentUpon>AcademicWaiverdbml.dbml</DependentUpon>
+    </None>
+    <None Include="Models\Program.dbml.layout">
+      <DependentUpon>Program.dbml</DependentUpon>
+    </None>
+    <None Include="Models\StudentInfo.dbml.layout">
+      <DependentUpon>StudentInfo.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50038</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50038/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

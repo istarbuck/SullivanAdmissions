@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="c2000" Class="StudentInfoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sv-ad-max-sql2;Initial Catalog=c2000;User ID=webappuser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AdultEnrollmentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.syStudent" Member="syStudents">
+    <Type Name="syStudent">
+      <Column Name="SSN" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AmTitleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="NickName" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="MaidenName" Type="System.String" DbType="VarChar(19) NOT NULL" CanBeNull="false" />
+      <Column Name="Addr1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Addr2" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="State" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Zip" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="BadAddr" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SyCountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SyCountyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkPhone" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Workext" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="BadPhone" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LeadDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AmLeadTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmSexID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmRaceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmNationalityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmMaritalID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DrivLicState" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="DrivLic" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DOB" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AlienNo" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="AmAgencyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmCitizenID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SySchoolStatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmRepID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmLeadSrcID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SyCampusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AdProgramGroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AdProgramID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AdShiftID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AmPrevEducID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmHighSchoolID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AmCollegeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HsGradDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ARBalance" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="NextTranNum" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ArAcctStat" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="StmtLastDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StmtBeginDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StmtCloseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StmtComment" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultAddressCode" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="DefaultAddressID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlEmployerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="plEmpStatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StuNum" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="PIN" Type="System.Decimal" DbType="Decimal(4,0)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" />
+      <Column Name="AmExtraCurrID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DataBlockIndicator" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ModFlag" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateLstMod" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="SyStudentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Disabled" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Vet" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalAmRepID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CumGPA" Type="System.Decimal" DbType="Decimal(11,6)" CanBeNull="true" />
+      <Column Name="CumGPAPoints" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CurrentLDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GPACredits" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="OriginalStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OriginalExpStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OtherPhone" Type="System.String" DbType="Char(16)" CanBeNull="true" />
+      <Column Name="OtherEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastInterestDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DefaultMasterAddressID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Suffix" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NIStudent" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StudentIdentifier" Type="System.String" DbType="VarChar(44)" CanBeNull="true" />
+      <Column Name="BestTimeToContact" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PrevEducGPA" Type="System.Decimal" DbType="Decimal(11,6)" CanBeNull="true" />
+      <Column Name="HSGraduated" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HSGraduationSession" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="HSDateEnrolled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HSLastDateAttended" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HSStudRank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HSSchoolSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HSTranscriptType" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HSStudLevel" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HSGradYear" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="LastName_FirstFour" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="Zip_FirstThree" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="DBIModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RawLastName" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="RawFirstName" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="RawPhone" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="ACGEligReasonCode" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="FARigorousHighSchoolProgramCodeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMSMSServiceProviderID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubscribeToSMS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MobileNumber" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="SourceSystem" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="IsHispanic" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CrmSuppressFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AmSuffixID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DDVeteran" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HSAcademicGPA" Type="System.Decimal" DbType="Decimal(11,6)" CanBeNull="true" />
+      <Column Name="AthleticID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="InDistrict" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="faGradPlusCounselingDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DefaultStipendsToEFT" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MI" Type="System.String" DbType="VarChar(1) NOT NULL" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

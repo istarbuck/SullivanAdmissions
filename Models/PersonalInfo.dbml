@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Admissions" Class="PersonalInfoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sv-ad-max-sql3;Initial Catalog=Admissions;User ID=webappuser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AdmissionsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AmHighSchool" Member="AmHighSchools">
+    <Type Name="AmHighSchool">
+      <Column Name="Code" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="SyCampusGrpID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Descrip" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="Addr1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Addr2" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="State" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Zip" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="FaxNo" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Contact1" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Title1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EMail1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Contact2" Type="System.String" DbType="Char(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Title2" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EMail2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ModFlag" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateLstMod" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ts" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="AMHighSchoolID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SyCountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TranscriptOfficeAddr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TranscriptOfficeCity" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="TranscriptOfficeState" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="TranscriptOfficeSyCountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TranscriptOfficeZip" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="TranscriptOfficePhone" Type="System.String" DbType="Char(16)" CanBeNull="true" />
+      <Column Name="TranscriptOfficeFax" Type="System.String" DbType="Char(16)" CanBeNull="true" />
+      <Column Name="TranscriptContact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TranscriptFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SyCountyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DrivingDirections" Type="System.String" DbType="NText" CanBeNull="true" />
+      <Column Name="SyOrganizationID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcadYearEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CrmSuppressFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SyCounty" Member="SyCounties">
+    <Type Name="SyCounty">
+      <Column Name="SyCountyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="Descrip" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateLstMod" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ModFlag" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ts" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="SyCampusGrpID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="County_FIPS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Forms" Member="Forms">
+    <Type Name="Form">
+      <Column Name="FormID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FormName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DocType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FormAssignments" Member="FormAssignments">
+    <Type Name="FormAssignment">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FormID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FieldInfo" Member="StudentFieldInfos">
+    <Type Name="StudentFieldInfo">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="controlID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="controlText" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="userControlID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AdultEnrollment" Class="ProgramDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sv-ad-max-sql3;Initial Catalog=AdultEnrollment;User ID=webappuser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AdultEnrollmentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ZipList" Member="ZipLists">
+    <Type Name="ZipList">
+      <Column Name="ZIP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+      <Column Name="[Location Code]" Member="Location_Code" Type="System.String" DbType="VarChar(55)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProgramInfo" Member="Programs">
+    <Type Name="Programs">
+      <Column Name="ProgCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="VersionDescrip" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ProgramDoc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Louisville" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Lexington" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="FortKnox" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Online" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Louisa" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="CarlisleNicholas" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="NorthernKentucky" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="TuitionClassification" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DegreeType" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ProgramID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Day" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Night" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Main" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ReEntry" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="International" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProgramCompFee" Member="ProgramCompFees">
+    <Type Name="ProgramCompFee">
+      <Column Name="ProgramID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="feeID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CompFees" Member="CompFees">
+    <Type Name="CompFee">
+      <Column Name="feeID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="feeName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="feeAmount" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="feeCharged" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
